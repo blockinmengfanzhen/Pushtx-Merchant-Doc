@@ -151,3 +151,24 @@ Response:
 }
 ```
 
+**err_no error code：**
+
+* 1001 access_id the parameter does not meet the specification
+
+* 1002 transaction id does not meet the specification
+
+* 1003 the signature does not meet the specification
+
+* 1004 order details- query order number exceeds limit
+
+* 4001 access_id parameter verification failed
+
+* 4002 Signature parameter verification failed
+
+* 2001 hash invalid
+
+* 2002 hash has been confirmed
+
+* 5001 order creation failed
+
+* 0 the request is normal
