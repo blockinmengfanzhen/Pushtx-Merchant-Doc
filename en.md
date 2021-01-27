@@ -165,7 +165,7 @@ Response:
 
 * 4002 Signature parameter verification failed
 
-* 2001 hash invalid
+* 2001 hash is invalid
 
 * 2002 hash has been confirmed
 
