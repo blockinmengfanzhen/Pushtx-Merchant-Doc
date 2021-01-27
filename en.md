@@ -153,17 +153,17 @@ Response:
 
 **err_no error code：**
 
-* 1001 access_id the parameter does not meet the specification
+* 1001 the access_id parameter does not meet the specification
 
-* 1002 transaction id does not meet the specification
+* 1002 the transaction hash parameter does not meet the specification
 
-* 1003 the signature does not meet the specification
+* 1003 the signature parameter does not meet the specification
 
 * 1004 order details- query order number exceeds limit
 
 * 4001 access_id parameter verification failed
 
-* 4002 Signature parameter verification failed
+* 4002 signature parameter verification failed
 
 * 2001 hash is invalid
 
@@ -171,4 +171,4 @@ Response:
 
 * 5001 order creation failed
 
-* 0 the request is normal
+* 0 the quest is normal
