@@ -99,17 +99,19 @@ Request:
 }
 Response:
 {
-    "err_no": 0, // error code
+    "err_no": 0,
     "data": {
-        "order_id": "4tml1ftn2qo2njtd_1611726972363", // order id
-        "transaction_id": "9cf8293d8633c030e7c8e9fc92efb301a3f73a5877250a15a88ded4b2e6bea3f", // transaction hash
-        "status": "unpaid", // transaction status
-        "total_size": 1222, // transaction size
-        "payment_channel": "trxusdt", // payment method
-        "payment_amount": 115.47,   // payment amount
-        "payment_address": "TByTMoubyhqfU8sjGbyzjcr1Hqimtkwbvd" // payment Address address
+        "order_id": "r8vk83w2xj5gogf6_1612181409151",                                           // 订单编号
+        "transaction_id": "b0ccb17ff628f618e4d0bcbb1081d9b785dd99f22a2ac49bfa51d95e2480eeaf",   // 交易hash
+        "status": "unpaid", // 订单状态
+        "total_size": 373,  // 交易提及
+        "payment_channel": "opennode",  // 支付方式
+        "payment_coin": "btc",  // 支付币种
+        "payment_amount": 272535,   // 支付数量 [btc以聪为单位，其他币种正常个数]
+        "payment_onchain_address": "2MuDgneCxwK4dgM4Cb9JQ2PvN8ui8PCDL3p",   // 链上支付地址
+        "payment_internal_address":             "LNTB2725350N1PSP0MA2PP54W6YR7Y40JTPJMX5FHJZLAZQMXCYQ380XZX9N6VKJPREY00YL40SDPSWGU8V6ECXDMNY7R2X4NK7EMXXE0NZD33XGCNSVF5XQUNZDF3CQZPGSP5JG72LUS0YV9E83U5QJRML4K2FQ7HFXQ6XKNKVWCET59286W6MVWQ9QY9QSQ26LEYMH4U8FTJGVUPXRZUC7CURVJM37HXPWSGG3KWVYG6DUZAJQ3DVYTP2WCPTA935SNM27XECPZ3USRUSEG2XXXX4L9EWURHVQE5PGPSYC3KP" // 内部支付地址 [当支付方式为opennode时会有区分，merchant方式无差别]
     },
-    "message": "success"
+    "message": "success" // 请求状态描述
 }
 ```
 #### Order detail
@@ -127,24 +129,19 @@ Response:
     "err_no": 0,
     "data": [
         {
-            "order_id": "4tml1ftn2qo2njtd_1611726972363",
-            "transaction_id": "9cf8293d8633c030e7c8e9fc92efb301a3f73a5877250a15a88ded4b2e6bea3f",
+            "order_id": "r8vk83w2xj5gogf6_1612181409151",
+            "transaction_id": "b0ccb17ff628f618e4d0bcbb1081d9b785dd99f22a2ac49bfa51d95e2480eeaf",
             "status": "unpaid",
-            "payment_channel": "trxusdt",
-            "payment_amount": 11547,
-            "payment_address": "TByTMoubyhqfU8sjGbyzjcr1Hqimtkwbvd",
-            "created_at": "2021-01-26T21:56:23.000Z",
-            "updated_at": "2021-01-26T21:56:23.000Z"
+            "payment_channel": "opennode",
+            "payment_coin": "btc",
+            "payment_amount": 272535,
+            "payment_onchain_address": "2MuDgneCxwK4dgM4Cb9JQ2PvN8ui8PCDL3p",
+            "payment_internal_address": "LNTB2725350N1PSP0MA2PP54W6YR7Y40JTPJMX5FHJZLAZQMXCYQ380XZX9N6VKJPREY00YL40SDPSWGU8V6ECXDMNY7R2X4NK7EMXXE0NZD33XGCNSVF5XQUNZDF3CQZPGSP5JG72LUS0YV9E83U5QJRML4K2FQ7HFXQ6XKNKVWCET59286W6MVWQ9QY9QSQ26LEYMH4U8FTJGVUPXRZUC7CURVJM37HXPWSGG3KWVYG6DUZAJQ3DVYTP2WCPTA935SNM27XECPZ3USRUSEG2XXXX4L9EWURHVQE5PGPSYC3KP",
+            "created_at": "2021-02-01T04:10:18.000Z",
+            "updated_at": "2021-02-01T04:10:18.000Z"
         },
         {
-            "order_id": "iv2pscdqctl6q31m_1611720158591",
-            "transaction_id": "1ecc705eb4e152d90d370d24445976e35eeac54bd59f653d7a4891ed3ec636e3",
-            "status": "unpaid",
-            "payment_channel": "trxusdt",
-            "payment_amount": 2157,
-            "payment_address": "TB64Q4uR7N8mEDnirZMxQzHy7e9icDEvvE",
-            "created_at": "2021-01-26T20:02:42.000Z",
-            "updated_at": "2021-01-26T20:02:42.000Z"
+            ...
         }
     ],
     "message": "success"
