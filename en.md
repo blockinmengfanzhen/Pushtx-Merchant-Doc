@@ -121,7 +121,6 @@ Request:
 {
     access_id: access id,   
     order_id: order ID, [support multi-ID query, divided by ",", query up to 10 IDs at a time]
- 
     signature: signature,  
 }
 Response:
