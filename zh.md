@@ -93,8 +93,8 @@ if __name__ == '__main__':
 Request:
 {
     access_id: 应用id,   
-    payment_type: 支付类型[cash、opennode],
-    payment_coin: 支付币种类型, [如非cash可以为空] 选填
+    payment_type: 支付类型[merchant, opennode],
+    payment_coin: 支付币种类型, merchant: [trxusdt]; opennode: [usd, cny, btc]
     transaction_id: 交易hash, 
     signature: 签名,  
 }
