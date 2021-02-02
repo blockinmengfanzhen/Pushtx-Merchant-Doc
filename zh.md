@@ -63,11 +63,12 @@ class PushtxMerchant(object):
         self.endpoint = endpoint
         self.timeout = timeout
 
-    def create_order(self, transaction_id, description=''):
+    def create_order(self, transaction_id, payment_type, payment_coin):
         data = {
             'access_id': self.access_id,
             'transaction_id': transaction_id,
-            'description': description,
+            'payment_type': payment_type,
+            'payment_coin': payment_coin
         }
         data['signature'] = sign_dict(self.secret_key, data).decode('utf8')
         import json
@@ -80,8 +81,8 @@ class PushtxMerchant(object):
 
 
 if __name__ == '__main__':
-    pushtx = PushtxMerchant('xxxxx', 'xxxxx', 'http://xxxxx:xxxx')
-    res = pushtx.create_order('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    pushtx = PushtxMerchant('access_id', 'secret_key', 'http://pushtx.com')
+    res = pushtx.create_order('txhash', 'payment_type', 'payment_coin')
     print(res)
 ```
 
