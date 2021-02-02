@@ -101,17 +101,17 @@ Response:
 {
     "err_no": 0,
     "data": {
-        "order_id": "r8vk83w2xj5gogf6_1612181409151",                                           // 订单编号
-        "transaction_id": "b0ccb17ff628f618e4d0bcbb1081d9b785dd99f22a2ac49bfa51d95e2480eeaf",   // 交易hash
-        "status": "unpaid", // 订单状态
-        "total_size": 373,  // 交易提及
-        "payment_channel": "opennode",  // 支付方式
-        "payment_coin": "btc",  // 支付币种
-        "payment_amount": 272535,   // 支付数量 [btc以聪为单位，其他币种正常个数]
-        "payment_onchain_address": "2MuDgneCxwK4dgM4Cb9JQ2PvN8ui8PCDL3p",   // 链上支付地址
-        "payment_internal_address":             "LNTB2725350N1PSP0MA2PP54W6YR7Y40JTPJMX5FHJZLAZQMXCYQ380XZX9N6VKJPREY00YL40SDPSWGU8V6ECXDMNY7R2X4NK7EMXXE0NZD33XGCNSVF5XQUNZDF3CQZPGSP5JG72LUS0YV9E83U5QJRML4K2FQ7HFXQ6XKNKVWCET59286W6MVWQ9QY9QSQ26LEYMH4U8FTJGVUPXRZUC7CURVJM37HXPWSGG3KWVYG6DUZAJQ3DVYTP2WCPTA935SNM27XECPZ3USRUSEG2XXXX4L9EWURHVQE5PGPSYC3KP" // 内部支付地址 [当支付方式为opennode时会有区分，merchant方式无差别]
+        "order_id": "r8vk83w2xj5gogf6_1612181409151",                                           // order id
+        "transaction_id": "b0ccb17ff628f618e4d0bcbb1081d9b785dd99f22a2ac49bfa51d95e2480eeaf",   // transaction id
+        "status": "unpaid", // payment status
+        "total_size": 373,  // transaction size
+        "payment_channel": "opennode",  // payment method
+        "payment_coin": "btc",  // payment coin
+        "payment_amount": 272535,   // payment amount [btc is in satoshis, and other coins are in units]
+        "payment_onchain_address": "2MuDgneCxwK4dgM4Cb9JQ2PvN8ui8PCDL3p",   // payment onchain address
+        "payment_internal_address":             "LNTB2725350N1PSP0MA2PP54W6YR7Y40JTPJMX5FHJZLAZQMXCYQ380XZX9N6VKJPREY00YL40SDPSWGU8V6ECXDMNY7R2X4NK7EMXXE0NZD33XGCNSVF5XQUNZDF3CQZPGSP5JG72LUS0YV9E83U5QJRML4K2FQ7HFXQ6XKNKVWCET59286W6MVWQ9QY9QSQ26LEYMH4U8FTJGVUPXRZUC7CURVJM37HXPWSGG3KWVYG6DUZAJQ3DVYTP2WCPTA935SNM27XECPZ3USRUSEG2XXXX4L9EWURHVQE5PGPSYC3KP" // Internal payment address [There will be a distinction when the payment method is opennode, and there is no difference in the merchant method]
     },
-    "message": "success" // 请求状态描述
+    "message": "success" // request status description
 }
 ```
 #### Order detail
