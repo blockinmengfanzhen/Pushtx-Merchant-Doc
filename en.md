@@ -92,8 +92,8 @@ if __name__ == '__main__':
 Request:
 {
     access_id: Access id,   
-    payment_type: type of payment[cash、opennode],
-    payment_coin: type of coin, [blank if not cash] optional
+    payment_type: type of payment[merchant、opennode],
+    payment_coin: type of coin, merchant: [trxusdt]; opennode: [usd, cny, btc]
     transaction_id: transaction hash, 
     signature: signature,  
 }
