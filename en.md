@@ -12,7 +12,7 @@
 **Surroundings**  
 >Test environment: http://8.210.181.251:8122 Please apply for the key, invocation interface only, no acceleration requested
 
->Production environment https://pushtx.com Please apply for the key.
+>Production environment: https://pushtx.com Please apply for the key.
 
 **Signature generation example**
 #### NODE
@@ -63,11 +63,12 @@ class PushtxMerchant(object):
         self.endpoint = endpoint
         self.timeout = timeout
 
-    def create_order(self, transaction_id, description=''):
+    def create_order(self, transaction_id, payment_type, payment_coin):
         data = {
             'access_id': self.access_id,
             'transaction_id': transaction_id,
-            'description': description,
+            'payment_type': payment_type,
+            'payment_coin': payment_coin
         }
         data['signature'] = sign_dict(self.secret_key, data).decode('utf8')
         import json
@@ -77,7 +78,6 @@ class PushtxMerchant(object):
         response = requests.post(url, headers=headers, json=data, timeout=self.timeout)
         print(json.dumps(response.json(),indent=2))
         return response.json()
-
 
 if __name__ == '__main__':
     pushtx = PushtxMerchant('xxxxx', 'xxxxx', 'http://xxxxx:xxxx')
