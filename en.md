@@ -109,7 +109,7 @@ Response:
         "payment_coin": "btc",  // payment coin
         "payment_amount": 272535,   // payment amount [btc is in satoshis, and other coins are in units]
         "payment_onchain_address": "2MuDgneCxwK4dgM4Cb9JQ2PvN8ui8PCDL3p",   // payment onchain address
-        "payment_internal_address":"LNTB2725350N1PSP0MA2PP54W6YR7Y40JTPJMX5FHJZLAZQMXCYQ380XZX9N6VKJPREY00YL40SDPSWGU8V6ECXDMNY7R2X4NK7EMXXE0NZD33XGCNSVF5XQUNZDF3CQZPGSP5JG72LUS0YV9E83U5QJRML4K2FQ7HFXQ6XKNKVWCET59286W6MVWQ9QY9QSQ26LEYMH4U8FTJGVUPXRZUC7CURVJM37HXPWSGG3KWVYG6DUZAJQ3DVYTP2WCPTA935SNM27XECPZ3USRUSEG2XXXX4L9EWURHVQE5PGPSYC3KP" // Internal payment address [There will be a distinction when the payment method is opennode, and there is no difference in the merchant method]
+        "payment_internal_address":"LNTB27253...QE5PGPSYC3KP" // Internal payment address [There will be a distinction when the payment method is opennode, and there is no difference in the merchant method]
     },
     "message": "success" // request status description
 }
@@ -136,7 +136,7 @@ Response:
             "payment_coin": "btc",
             "payment_amount": 272535,
             "payment_onchain_address": "2MuDgneCxwK4dgM4Cb9JQ2PvN8ui8PCDL3p",
-            "payment_internal_address": "LNTB2725350N1PSP0MA2PP54W6YR7Y40JTPJMX5FHJZLAZQMXCYQ380XZX9N6VKJPREY00YL40SDPSWGU8V6ECXDMNY7R2X4NK7EMXXE0NZD33XGCNSVF5XQUNZDF3CQZPGSP5JG72LUS0YV9E83U5QJRML4K2FQ7HFXQ6XKNKVWCET59286W6MVWQ9QY9QSQ26LEYMH4U8FTJGVUPXRZUC7CURVJM37HXPWSGG3KWVYG6DUZAJQ3DVYTP2WCPTA935SNM27XECPZ3USRUSEG2XXXX4L9EWURHVQE5PGPSYC3KP",
+            "payment_internal_address": "LNTB27253...QE5PGPSYC3KP",
             "created_at": "2021-02-01T04:10:18.000Z",
             "updated_at": "2021-02-01T04:10:18.000Z"
         },
