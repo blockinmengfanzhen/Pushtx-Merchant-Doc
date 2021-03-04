@@ -94,7 +94,7 @@ Request:
 {
     access_id: 应用id,   
     payment_type: 支付类型[merchant, opennode],
-    payment_coin: 支付币种类型, merchant: [trxusdt, 'ethusdt', 'eth', 'bch', 'ltc', 'doge', 'zec', 'dash']; opennode: [usd, cny, btc]
+    payment_coin: 支付币种类型, merchant: ['trxusdt', 'ethusdt', 'eth', 'bch', 'ltc', 'doge', 'zec', 'dash']; opennode: [usd, cny, btc]
     transaction_id: 交易hash, 
     signature: 签名,  
 }
