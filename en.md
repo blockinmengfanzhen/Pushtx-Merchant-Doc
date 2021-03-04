@@ -167,4 +167,6 @@ Response:
 
 * 5001 order creation failed
 
+* 5002 service quotation system abnormal
+
 * 0 the quest is normal
