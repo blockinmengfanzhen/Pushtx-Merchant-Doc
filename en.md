@@ -93,7 +93,7 @@ Request:
 {
     access_id: Access id,   
     payment_type: type of payment[merchant、opennode],
-    payment_coin: type of coin, merchant: [trxusdt]; opennode: [usd, cny, btc]
+    payment_coin: type of coin, merchant: ['trxusdt', 'ethusdt', 'eth', 'bch', 'ltc', 'doge', 'zec', 'dash']; opennode: [usd, cny, btc]
     transaction_id: transaction hash, 
     signature: signature,  
 }
