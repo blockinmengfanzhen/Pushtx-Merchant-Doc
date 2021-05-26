@@ -35,6 +35,18 @@ let enCryptoSHA1 = crypto
     .digest('hex');
 enCryptoSHA1 = Buffer.from(enCryptoSHA1, 'hex').toString('base64');
 ```
+#### PHP
+```
+function sign ($data){
+    ksort($data);
+    var_dump($data);
+    $keyString = [];
+    foreach($data as $key => $v){
+        $keyString[] = "{$key}={$v}";
+    }
+    return base64_encode(hash_hmac("sha1", implode("&", $keyString), ACCESS_SECRET, true));
+}
+```
 #### PYTHON
 ```
 #!/usr/bin/env python3
